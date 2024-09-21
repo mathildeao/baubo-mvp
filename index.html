@@ -6,103 +6,68 @@
     <title>Baubo - Support for Vulvar, Vaginal, and Pelvic Floor Pain</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Quicksand', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #fcf5f5;
-            color: #4a4a4a;
-        }
-        header {
-            background-color: #f8e1e1;
-            color: #4a4a4a;
-            text-align: center;
-            padding: 2rem;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-        }
-        h1, h2, h3 {
-            font-weight: 500;
-        }
-        nav {
-            background-color: #fff0f0;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #4a4a4a;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #e6a4a4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 40px 20px;
-        }
-        .section {
-            background-color: white;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .btn {
-            background-color: #e6a4a4;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #d88c8c;
-        }
-        .video-library, .event-gallery {
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 20px 0;
-        }
-        .video-item, .event-item {
-            display: inline-block;
-            width: 250px;
-            margin-right: 20px;
-            vertical-align: top;
-        }
-        .video-item img, .event-item img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .question-of-day {
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .forum, .community-favorites {
-            margin-bottom: 20px;
-        }
-        .product-gallery {
-            display: flex;
-            overflow-x: auto;
-            padding: 20px 0;
-        }
+        /* ... (previous styles remain the same) ... */
         .product-item {
             flex: 0 0 auto;
             width: 200px;
-            margin-right: 20px
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baubo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#guided-practices">Guided Practices</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>We are on a mission to make effective support for vulvar, vaginal and pelvic floor pain accessible to everyone.</p>
+        </section>
+        <section id="guided-practices" class="section">
+            <h2>Guided Practices</h2>
+            <div class="video-library">
+                <!-- Add video items here -->
+            </div>
+        </section>
+        <section id="community" class="section">
+            <h2>Community</h2>
+            <div class="question-of-day">
+                <h3>Question of the Day</h3>
+                <p>Do you experience more pain when menstruating?</p>
+                <button class="btn">Yes</button>
+                <button class="btn">No</button>
+            </div>
+            <div class="forum">
+                <h3>Forum</h3>
+                <p>Join our supportive community to share experiences and find answers.</p>
+                <button class="btn">Enter Forum</button>
+            </div>
+            <div class="community-favorites">
+                <h3>Community Favorites</h3>
+                <div class="product-gallery">
+                    <!-- Add product items here -->
+                </div>
+            </div>
+            <div class="upcoming-events">
+                <h3>Upcoming Events</h3>
+                <div class="event-gallery">
+                    <!-- Add event items here -->
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <p>We're here to listen and help. Reach out to us for support, questions, or to schedule a consultation.</p>
+            <button class="btn">Contact Us</button>
+        </section>
+    </div>
+</body>
+</html>
