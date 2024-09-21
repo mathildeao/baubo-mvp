@@ -94,139 +94,15 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
-        .forum, .popular-products {
+        .forum, .community-favorites {
             margin-bottom: 20px;
         }
-        .product-category {
-            margin-bottom: 15px;
+        .product-gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 0;
         }
         .product-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .upvote-btn {
-            margin-right: 10px;
-            background-color: #e6a4a4;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Baubo</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#guided-practices">Guided Practices</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Us</h2>
-            <p>We are on a mission to make effective support for vulvar, vaginal and pelvic floor pain accessible to everyone.</p>
-        </section>
-        <section id="guided-practices" class="section">
-            <h2>Guided Practices</h2>
-            <div class="video-library">
-                <div class="video-item">
-                    <img src="/api/placeholder/250/141" alt="Guided Practice 1">
-                    <h3>Pelvic Floor Relaxation</h3>
-                </div>
-                <div class="video-item">
-                    <img src="/api/placeholder/250/141" alt="Guided Practice 2">
-                    <h3>Mindfulness for Pain</h3>
-                </div>
-                <div class="video-item">
-                    <img src="/api/placeholder/250/141" alt="Guided Practice 3">
-                    <h3>Gentle Yoga Flow</h3>
-                </div>
-                <div class="video-item">
-                    <img src="/api/placeholder/250/141" alt="Guided Practice 4">
-                    <h3>Breathing Techniques</h3>
-                </div>
-                <div class="video-item">
-                    <img src="/api/placeholder/250/141" alt="Guided Practice 5">
-                    <h3>Self-Massage Guide</h3>
-                </div>
-            </div>
-        </section>
-        <section id="community" class="section">
-            <h2>Community</h2>
-            <div class="question-of-day">
-                <h3>Question of the Day</h3>
-                <p>Do you experience more pain when menstruating?</p>
-                <button class="btn">Yes</button>
-                <button class="btn">No</button>
-            </div>
-            <div class="forum">
-                <h3>Forum</h3>
-                <p>Join our supportive community to share experiences and find answers.</p>
-                <button class="btn">Enter Forum</button>
-            </div>
-            <div class="popular-products">
-                <h3>Most Popular Products</h3>
-                <div class="product-category">
-                    <h4>Lubricants</h4>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Natural Aloe Vera Lubricant</span>
-                    </div>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Hypoallergenic Water-Based Lubricant</span>
-                    </div>
-                </div>
-                <div class="product-category">
-                    <h4>Dilators</h4>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Silicone Dilator Set</span>
-                    </div>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Progressive Dilator Kit</span>
-                    </div>
-                </div>
-                <div class="product-category">
-                    <h4>Other</h4>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Pelvic Floor Relaxation Cushion</span>
-                    </div>
-                    <div class="product-item">
-                        <button class="upvote-btn">↑</button>
-                        <span>Soothing Herbal Heat Pad</span>
-                    </div>
-                </div>
-            </div>
-            <div class="upcoming-events">
-                <h3>Upcoming Events</h3>
-                <div class="event-gallery">
-                    <div class="event-item">
-                        <img src="/api/placeholder/250/141" alt="Lunchtime Guided Pelvic Floor Relaxation">
-                        <h4>Lunchtime Guided Pelvic Floor Relaxation</h4>
-                    </div>
-                    <div class="event-item">
-                        <img src="/api/placeholder/250/141" alt="Yin Yoga at Love Supreme Projects">
-                        <h4>Yin Yoga at Love Supreme Projects</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <h2>Get in Touch</h2>
-            <p>We're here to listen and help. Reach out to us for support, questions, or to schedule a consultation.</p>
-            <button class="btn">Contact Us</button>
-        </section>
-    </div>
-</body>
-</html>
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 20px
