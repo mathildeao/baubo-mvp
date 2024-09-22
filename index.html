@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baubo Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tan+Nimbus:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -29,23 +31,25 @@
             font-size: 2.5em;
             color: #f5efe6;
             text-decoration: none;
+            font-weight: 700;
         }
         h1, h2, h3 {
             color: #8c7a6b;
+            font-family: 'Tan Nimbus', sans-serif;
         }
-        .about-section, .guided-practices, .forum, .question-of-day {
+        .about-section, .guided-practices, .podcast, .community, .forum, .question-of-day {
             background-color: #e8dfd5;
             padding: 40px;
             border-radius: 10px;
             margin-bottom: 40px;
         }
-        .practice-gallery, .product-gallery {
+        .practice-gallery, .product-gallery, .podcast-gallery {
             display: flex;
             overflow-x: auto;
             gap: 20px;
             padding-bottom: 20px;
         }
-        .practice-card, .product-card {
+        .practice-card, .product-card, .podcast-card {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -53,7 +57,7 @@
             min-width: 250px;
             transition: transform 0.3s ease;
         }
-        .practice-card:hover, .product-card:hover {
+        .practice-card:hover, .product-card:hover, .podcast-card:hover {
             transform: translateY(-5px);
         }
         .practice-image, .product-image {
@@ -81,6 +85,33 @@
             padding: 20px;
             margin-bottom: 20px;
         }
+        .practice-tiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .practice-tile {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -93,48 +124,109 @@
     <div class="container">
         <section class="about-section">
             <h1>Meet Baubo</h1>
-            <p>Join the tightest community on the internet, supporting you through every step of the journey.</p>
+            <p>We are on a mission to make effective support for vulvar, vaginal and pelvic floor pain accessible to everyone.</p>
+            <p>Vulvodynia and vaginismus are often taboo, making it hard for those affected to seek support. We're breaking the silence to destigmatize these conditions, empowering women to share their stories, access effective treatments, and join a supportive community where they no longer feel isolated or misunderstood.</p>
+            <p>Our name is inspired by the Greek goddess of humor, Baubo, depicted as a walking vulva. In mythology, Baubo lifted the grieving Demeter's spirits with ribald jokes and by exposing her vulva, symbolizing the power of humor to overcome darkness.</p>
+            <p>Like our namesake, we aim to bring light to those facing vulvar, vaginal and pelvic pain.</p>
         </section>
 
         <section class="guided-practices">
             <h2>Guided Practices</h2>
+            <div class="practice-tiles">
+                <div class="practice-tile">
+                    <h3>Breathwork</h3>
+                    <p>Exercises: 7</p>
+                </div>
+                <div class="practice-tile">
+                    <h3>Dilating</h3>
+                    <p>Exercises: 5</p>
+                </div>
+                <div class="practice-tile">
+                    <h3>Desensitisation</h3>
+                    <p>Exercises: 8</p>
+                </div>
+                <div class="practice-tile">
+                    <h3>Mind-body Connection</h3>
+                    <p>Exercises: 6</p>
+                </div>
+                <div class="practice-tile">
+                    <h3>Hypnotherapy</h3>
+                    <p>Exercises: 3</p>
+                </div>
+            </div>
+            <h3>Most Popular Practices</h3>
             <div class="practice-gallery">
                 <div class="practice-card">
-                    <img src="https://placeholder.com/250x200" alt="Breathing Exercise" class="practice-image">
+                    <img src="https://placehold.co/250x200?text=Breathing+Exercise" alt="Breathing Exercise" class="practice-image">
                     <h3>Breathing Exercise</h3>
                     <p>Learn deep breathing techniques to relax and reduce pain.</p>
                 </div>
                 <div class="practice-card">
-                    <img src="https://placeholder.com/250x200" alt="Pelvic Floor Relaxation" class="practice-image">
+                    <img src="https://placehold.co/250x200?text=Pelvic+Floor+Relaxation" alt="Pelvic Floor Relaxation" class="practice-image">
                     <h3>Pelvic Floor Relaxation</h3>
                     <p>Guided practice for releasing tension in the pelvic floor muscles.</p>
                 </div>
                 <div class="practice-card">
-                    <img src="https://placeholder.com/250x200" alt="Mindfulness Meditation" class="practice-image">
+                    <img src="https://placehold.co/250x200?text=Mindfulness+Meditation" alt="Mindfulness Meditation" class="practice-image">
                     <h3>Mindfulness Meditation</h3>
                     <p>A gentle meditation to increase body awareness and reduce anxiety.</p>
                 </div>
             </div>
+            <div class="embed-container">
+                <iframe src="https://tally.so/embed/m6v8ko?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Guided Practices Feedback"></iframe>
+            </div>
         </section>
 
-        <section class="recommendations-section">
-            <h2>Community Recommendations</h2>
+        <section class="podcast">
+            <h2>Baubo the Podcast</h2>
+            <div class="podcast-gallery">
+                <div class="podcast-card">
+                    <h3>The Role of Desensitization in Treating Vulvodynia</h3>
+                    <p>with Pelvic Floor Physiotherapist Jo Gibson</p>
+                </div>
+                <div class="podcast-card">
+                    <h3>All In Her Head: How Gender Bias Harms Women's Mental Health</h3>
+                    <p>with Misty Pratt</p>
+                </div>
+                <div class="podcast-card">
+                    <h3>Navigating Sex with Vulvar, Vaginal, or Pelvic Pain</h3>
+                    <p>with Sexologist Juliet Allen</p>
+                </div>
+                <div class="podcast-card">
+                    <h3>How Everyday Movement Patterns Affect Pelvic Pain</h3>
+                    <p>with Osteopath Emma Berry</p>
+                </div>
+            </div>
+            <div class="embed-container">
+                <iframe src="https://tally.so/embed/3XYxDV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Podcast Feedback"></iframe>
+            </div>
+        </section>
 
+        <section class="community">
+            <h2>Community</h2>
+            <div class="question-of-day">
+                <h3>Question of the Day</h3>
+                <div class="embed-container">
+                    <iframe src="https://tally.so/embed/3jWaW1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Question of the Day"></iframe>
+                </div>
+            </div>
+
+            <h3>Community Recommendations</h3>
             <div class="product-category">
-                <h3>Dilators</h3>
+                <h4>Dilators</h4>
                 <div class="product-gallery">
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/71KHRxSUzKL._AC_SL1500_.jpg" alt="Intimate Rose Dilators" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Intimate+Rose+Dilators" alt="Intimate Rose Dilators" class="product-image">
                         <h4>Intimate Rose Dilators</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://cdn.shopify.com/s/files/1/0508/6409/0552/products/TheNaturalLoveCompany-WisteriaDilatorTrainingSet-MadefromSoftSilicone_1080x.jpg?v=1680185971" alt="Wisteria Dilator Training Set" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Wisteria+Dilator+Set" alt="Wisteria Dilator Training Set" class="product-image">
                         <h4>Wisteria Dilator Training Set</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Dilator" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Dilator" alt="Placeholder Dilator" class="product-image">
                         <h4>Placeholder Dilator</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
@@ -142,20 +234,20 @@
             </div>
 
             <div class="product-category">
-                <h3>Lubricators</h3>
+                <h4>Lubricators</h4>
                 <div class="product-gallery">
                     <div class="product-card">
-                        <img src="https://cdn.shopify.com/s/files/1/0508/6409/0552/products/SlipperyStuff-PersonalLubricantGel_1080x.jpg?v=1680185971" alt="Slippery Stuff Gel" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Slippery+Stuff+Gel" alt="Slippery Stuff Gel" class="product-image">
                         <h4>Slippery Stuff Gel</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Lubricator 1" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Lubricator+1" alt="Placeholder Lubricator 1" class="product-image">
                         <h4>Placeholder Lubricator 1</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Lubricator 2" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Lubricator+2" alt="Placeholder Lubricator 2" class="product-image">
                         <h4>Placeholder Lubricator 2</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
@@ -163,47 +255,39 @@
             </div>
 
             <div class="product-category">
-                <h3>Other</h3>
+                <h4>Other</h4>
                 <div class="product-gallery">
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Other 1" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Other+1" alt="Placeholder Other 1" class="product-image">
                         <h4>Placeholder Other 1</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Other 2" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Other+2" alt="Placeholder Other 2" class="product-image">
                         <h4>Placeholder Other 2</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                     <div class="product-card">
-                        <img src="https://placeholder.com/250x200" alt="Placeholder Other 3" class="product-image">
+                        <img src="https://placehold.co/250x200?text=Placeholder+Other+3" alt="Placeholder Other 3" class="product-image">
                         <h4>Placeholder Other 3</h4>
                         <button class="upvote-button">↑ Upvote</button>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="forum">
-            <h2>Community Forum</h2>
-            <div class="forum-post">
-                <h3>Dealing with Anxiety</h3>
-                <p>Hi everyone, I'm struggling with anxiety related to my condition. Any tips on how to manage this?</p>
-                <button class="upvote-button">↑ Upvote</button>
+            <div class="forum">
+                <h3>Community Forum</h3>
+                <div class="forum-post">
+                    <h4>Dealing with Anxiety</h4>
+                    <p>Hi everyone, I'm struggling with anxiety related to my condition. Any tips on how to manage this?</p>
+                    <button class="upvote-button">↑ Upvote</button>
+                </div>
+                <div class="forum-post">
+                    <h4>Progress with Dilators</h4>
+                    <p>I've been using dilators for a month now and I'm seeing some progress. Wanted to share my experience and encourage others!</p>
+                    <button class="upvote-button">↑ Upvote</button>
+                </div>
             </div>
-            <div class="forum-post">
-                <h3>Progress with Dilators</h3>
-                <p>I've been using dilators for a month now and I'm seeing some progress. Wanted to share my experience and encourage others!</p>
-                <button class="upvote-button">↑ Upvote</button>
-            </div>
-        </section>
-
-        <section class="question-of-day">
-            <h2>Question of the Day</h2>
-            <p>What's one small win you've experienced this week in your journey?</p>
-            <textarea rows="4" cols="50" placeholder="Share your thoughts..."></textarea>
-            <br>
-            <button class="upvote-button">Submit</button>
         </section>
     </div>
 </body>
