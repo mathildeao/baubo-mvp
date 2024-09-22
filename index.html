@@ -19,25 +19,33 @@
             margin: 0 auto;
             padding: 20px;
         }
+        header {
+            background-color: #8c7a6b;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header a {
+            font-family: 'Tan Nimbus', sans-serif;
+            font-size: 2.5em;
+            color: #f5efe6;
+            text-decoration: none;
+        }
         h1, h2, h3 {
             color: #8c7a6b;
         }
-        .about-section {
+        .about-section, .guided-practices, .forum, .question-of-day {
             background-color: #e8dfd5;
             padding: 40px;
             border-radius: 10px;
             margin-bottom: 40px;
         }
-        .product-category {
-            margin-bottom: 40px;
-        }
-        .product-gallery {
+        .practice-gallery, .product-gallery {
             display: flex;
             overflow-x: auto;
             gap: 20px;
             padding-bottom: 20px;
         }
-        .product-card {
+        .practice-card, .product-card {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,10 +53,10 @@
             min-width: 250px;
             transition: transform 0.3s ease;
         }
-        .product-card:hover {
+        .practice-card:hover, .product-card:hover {
             transform: translateY(-5px);
         }
-        .product-image {
+        .practice-image, .product-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
@@ -67,13 +75,46 @@
         .upvote-button:hover {
             background-color: #6b5a4c;
         }
+        .forum-post {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="#" id="logo">Baubo</a>
+        </div>
+    </header>
+
     <div class="container">
         <section class="about-section">
             <h1>Meet Baubo</h1>
             <p>Join the tightest community on the internet, supporting you through every step of the journey.</p>
+        </section>
+
+        <section class="guided-practices">
+            <h2>Guided Practices</h2>
+            <div class="practice-gallery">
+                <div class="practice-card">
+                    <img src="https://placeholder.com/250x200" alt="Breathing Exercise" class="practice-image">
+                    <h3>Breathing Exercise</h3>
+                    <p>Learn deep breathing techniques to relax and reduce pain.</p>
+                </div>
+                <div class="practice-card">
+                    <img src="https://placeholder.com/250x200" alt="Pelvic Floor Relaxation" class="practice-image">
+                    <h3>Pelvic Floor Relaxation</h3>
+                    <p>Guided practice for releasing tension in the pelvic floor muscles.</p>
+                </div>
+                <div class="practice-card">
+                    <img src="https://placeholder.com/250x200" alt="Mindfulness Meditation" class="practice-image">
+                    <h3>Mindfulness Meditation</h3>
+                    <p>A gentle meditation to increase body awareness and reduce anxiety.</p>
+                </div>
+            </div>
         </section>
 
         <section class="recommendations-section">
@@ -141,6 +182,28 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="forum">
+            <h2>Community Forum</h2>
+            <div class="forum-post">
+                <h3>Dealing with Anxiety</h3>
+                <p>Hi everyone, I'm struggling with anxiety related to my condition. Any tips on how to manage this?</p>
+                <button class="upvote-button">↑ Upvote</button>
+            </div>
+            <div class="forum-post">
+                <h3>Progress with Dilators</h3>
+                <p>I've been using dilators for a month now and I'm seeing some progress. Wanted to share my experience and encourage others!</p>
+                <button class="upvote-button">↑ Upvote</button>
+            </div>
+        </section>
+
+        <section class="question-of-day">
+            <h2>Question of the Day</h2>
+            <p>What's one small win you've experienced this week in your journey?</p>
+            <textarea rows="4" cols="50" placeholder="Share your thoughts..."></textarea>
+            <br>
+            <button class="upvote-button">Submit</button>
         </section>
     </div>
 </body>
